@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-button ID = "hamburguesa" (click)="mostrarMenu()" color="contrast">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+       </ion-button>
+    </ion-buttons>
+    <ion-title ID = "titulokkk">Tecnoticias</ion-title>
+    <ion-icon ID = "hamburguesa" (click)="logout()" name="exit-outline" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12"
+                  *ngFor ="let noticia of noticias; let i= index">
+            <ion-card >
+              <ion-card-header>
+                <ion-card-subtitle>
+                    <span class="text">{{i + 1 }}</span>
+                    <span class="noticia-name">{{noticia.source.name}} </span>
+                </ion-card-subtitle>
+                <ion-card-title>{{noticia.title}}</ion-card-title>
+              </ion-card-header>    
+              <ion-img  *ngIf="noticia.urlToImage"
+                        [src]="noticia.urlToImage"></ion-img>   
+              
+              <ion-card-content>
+                <p class="noticia-description">
+                  {{noticia.description}}
+                </p>
+              </ion-card-content>          
+            </ion-card>
+        </ion-col>  
+      </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,22 @@
+ion-toolbar{
+    background-color: var(--ion-color-mycolor);
+}
+
+#logo{
+    height: auto;
+    width: 15%;
+    float: left;
+    padding-left: 5%;
+}
+
+#titulokkk, #hamburguesa{
+  color: black;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVI.woff2) format('woff2');
+}
+*{
+  font-family: 'Open Sans', sans-serif;
+}
