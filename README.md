@@ -1,6 +1,18 @@
 # Gonzalez_Jara_003D
 Experiencia 2
 
+Integrantes:
+
+Victor Gonzalez
+Gianfranco Jara
+
+Seccion:
+
+003D
+
+Proyecto:
+
+InfoGaming
 
 
 INSTRUCCIONES:
